@@ -1,0 +1,159 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 0 100px;
+}
+
+.page {
+	max-width: 990px;
+	margin: 0 auto;
+}
+
+.header-logo {
+	text-align: center;
+	padding: 20px 0;
+}
+
+.menu-nav {
+	overflow: scroll;
+	white-space: nowrap;
+	background-color: #373737;
+}
+
+::-webkit-scrollbar {
+    display:none;
+}
+
+.menu-nav a {
+	color: white;
+	font-size: 12px;
+	padding: 7px 8px;
+}
+
+.menu-nav a:hover {
+	background-color: white;
+	color: #373737;
+}
+
+.last {
+	border-left: 1px solid white;
+	background-color: #283558;
+}
+
+h5 {
+	font-family: serif;
+}
+
+.side-column {
+	margin-top: 15px;
+}
+
+/********Left Column Showcase*****/
+.history-pagination a {
+	color: grey;
+	font-size: 12px;
+}
+
+.history-pagination a:last-child {
+	font-weight: bold;
+}
+
+.small-display-img {
+	padding: 5px;
+}
+
+.left-side-images {
+	text-align: center;
+}
+
+.left-side-images ul {
+	margin-top: 20px;
+}
+
+.other-color-images {
+	overflow: scroll;
+}
+
+#selected-img {
+	border: 3px solid black;
+}
+
+/**********Right Column Showcase********/
+.right-content{
+	margin-top: 20px;
+}
+
+.right-content p, li {
+	font-weight: lighter;
+	font-size: 15px;
+}
+
+.quantity-input {
+    width: 50px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 11px;
+    margin: 6px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.buy-btn {
+	background-color: #EA1A18;
+	color: white;
+	height: 40px;
+	width: 150px;
+	border: none;
+	margin: 25px 0;
+}
+
+.buy-btn-message {
+	display: none;
+	color: green;
+	padding-left: 10px;
+}
+
+.expanded-text {
+	display: none;
+	margin-left: 30px;
+}
+
+.expanding-section {
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+.collapsing-div {
+border-bottom: 1px solid grey;
+}
+
+/**********Footer*************/
+footer {
+	position: absolute;
+	background-color: #F1F1F1;
+	text-align: center;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+footer p {
+	margin-top: 0.7rem;
+	font-size: 11px;
+}
+
+footer a {
+	color: black;
+	font-weight: 500;
+}
+
+/*******responsive Media Query*******/
+@media (min-width: 768px) { 
+	.right-content{
+		padding-left: 30px;		
+	}
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Williams Sonoma</title>
+	  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="page">
+		<div class="header-logo">
+			<img src="./assets/logo.png" />
+		</div>
+
+	<!-- Navv Menu -->
+		<nav class="nav nav-fill flex-nowrap menu-nav">
+		  <a class="nav-link" href="#">COOKWARE</a>
+		  <a class="nav-link" href="#">COOKS' TOOLS</a>
+		  <a class="nav-link" href="#">CUTLERY</a>
+		  <a class="nav-link" href="#">ELECTRICS</a>
+		  <a class="nav-link" href="#">BAKEWARE</a>
+		  <a class="nav-link" href="#">FOOD</a>
+		  <a class="nav-link" href="#">TABLETOP & BAR</a>
+		  <a class="nav-link" href="#">HOMEKEEPING</a>
+		  <a class="nav-link" href="#">OUTDOOR</a>
+		  <a class="nav-link" href="#">SALE</a>
+		  <a class="nav-link last" href="#">WILLIAMS-SONOMA HOME</a>
+		</nav>
+
+	<!-- Showcase -->
+		<div class="container-fluid">
+		  <div class="row">
+		    
+		    <!-- Left Column -->
+		    <div class="col-md side-column">
+		    	
+		    	<div class="history-pagination">
+			      	<a href="#">Home ></a>
+			      	<a href="#">Homekeeping ></a>
+			      	<a href="#">Aprons ></a>
+			      	<a href="#">Adult Aprons ></a>
+			      	<a href="#">Williams-Sonoma Classic Apron, French Blue</a>
+			    </div>
+
+			    <div class="left-side-images">
+				    <img id="display-img" src="./assets/product-large-a.jpg" class="display-img img-fluid" />
+
+				    <!-- Other colors of the item -->
+				    <ul class="nav flex-nowrap other-color-images justify-content-sm-center">
+				    	<li>
+				    		<img id="selected-img" onclick="changeDisplayImage(this, 'a')" class="small-display-img" src="./assets/product-small-a.jpg" />
+				    	</li>
+
+				    	<li>
+				    		<img onclick="changeDisplayImage(this, 'b')" class="small-display-img" src="./assets/product-small-b.jpg" />
+				    	</li>
+
+				    	<li>
+				    		<img onclick="changeDisplayImage(this, 'c')" class="small-display-img" src="./assets/product-small-c.jpg" />
+				    	</li>
+
+				    	<li>
+				    		<img onclick="changeDisplayImage(this, 'd')" class="small-display-img" src="./assets/product-small-d.jpg" />
+				    	</li>
+				    </ul>
+				</div>
+
+		    </div>
+		    
+		    <!-- Right Column -->
+		    <div class="col-md side-column">
+		    	<div class="right-content">
+			      <!-- Item Title -->
+			      <h5>Williams-Sonoma Classic Apron, French Blue</h5>
+
+			      <!-- Item Description -->
+			      <p>
+			      	A generously sized apron is a necessity in any kitchen, and ours will brighten yours with lively color. Sewn of the thick cotton, it can be personalized or monogrammed with up to nine characters, all the same height, embroidered in your choice of color. An apron of this quality makes a welcome gift for any cook.
+			      </p>
+
+			      <!-- Item Selling Points -->
+			      <ul>
+			      	<li>Durable 100% cotton construction.</li>
+			      	<li>Adjustable neckband ensures a good fit.</li>
+			      	<li>Roomy front pockets hold small tools.</li>
+			      	<li>Machine-wash.</li>
+			      </ul>
+
+			      <!-- Price -->
+			      <h5>$19.95</h5>
+			      
+			      <!-- Quantity -->
+			      <form>
+			      	<input class="quantity-input" min="1" max="5"
+			      	type="number" value="1" />
+			      </form>
+
+			      <button onclick="itemAdded()" class="buy-btn">
+			      	ADD TO CART
+			      </button>
+
+			      <!-- Added To Shopping Cart Message -->
+			      <p id="shopping-cart-msg" class="animated buy-btn-message">Item added to Shopping Cart </p>
+
+				  <!-- Expanded Content When Clicked -->
+			      <div class="expanding-section">
+				      	<div class="collapsing-div">
+				    		<h5 onclick="expandContent(this)">
+				    		<i class="material-icons">arrow_right</i>
+				    		EXPANDED
+				    		</h5>
+				    		<p class="expanded-text">
+				    			The section is expanded. This section can be collapsed by clicking on the "Expanded" text. This section is expanded. This section can be collapsed by clicking on the "Expanded" text.
+				    		</p>
+				    	</div>
+
+				    	<div class="collapsing-div">
+				    		<h5 onclick="expandContent(this)">
+				    		<i class="material-icons">arrow_right</i>
+				    		COLLAPSED
+				    		</h5>
+				    		<p class="expanded-text">
+				    			The section is expanded. This section can be collapsed by clicking on the "Expanded" text. This section is expanded. This section can be collapsed by clicking on the "Expanded" text.
+				    		</p>
+				    	</div>
+
+				    	<div class="collapsing-div">
+				    		<h5 onclick="expandContent(this)">
+				    		<i class="material-icons">arrow_right</i>
+				    		COLLAPSED
+				    		</h5>
+				    		<p class="expanded-text">
+				    			The section is expanded. This section can be collapsed by clicking on the "Expanded" text. This section is expanded. This section can be collapsed by clicking on the "Expanded" text.
+				    		</p>
+				    	</div>
+				    </div>
+				</div>
+		    </div>
+
+		  </div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+	<footer>
+		 <p>&copy;Williams-Sonoma Inc, All Rights Reserved | 
+			 <a href="#">Terms and Conditions </a>|
+			 <a href="#"> Privacy Policy </a>|
+			 <a href="#"> Legal Statement</a>
+		 </p>
+	</footer>
+	
+
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
